@@ -1,3 +1,4 @@
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -9,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 # import dataset
-dataset = pd.read_csv('Data.csv')
+dataset = pd.read_csv('datasets/Data.csv')
 features = dataset.iloc[:, :-1].values  # index locating ( row & column )
 dependent_variable = dataset.iloc[:, -1].values
 
@@ -35,4 +36,3 @@ x_train, x_test, y_train, y_test = train_test_split(features, dependent_variable
 sc = StandardScaler()
 x_train[:, 3:] = sc.fit_transform(x_train[:, 3:])
 x_test[:, 3:] = sc.fit_transform(x_test[:, 3:])
-
