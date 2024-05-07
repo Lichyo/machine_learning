@@ -11,6 +11,7 @@ data = pd.read_csv('datasets/Salary_Data.csv')
 X = data.iloc[:, :-1].values
 Y = data.iloc[:, -1].values
 
+
 # fill missing values
 imputer = SimpleImputer(missing_values=np.NAN, strategy='mean')
 imputer.fit(X[:, :])
