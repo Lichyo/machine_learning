@@ -9,7 +9,7 @@ from sklearn.tree import DecisionTreeRegressor
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv('datasets/Data.csv')
+data = pd.read_csv('../datasets/Data.csv')
 raw_x = data.iloc[:, :-1]
 raw_y = data.iloc[:, -1]
 x_train, x_test, y_train, y_test = train_test_split(raw_x, raw_y, random_state=0)

@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('datasets/50_Startups.csv')
+data = pd.read_csv('../datasets/50_Startups.csv')
 X = data.iloc[:, :-1].values
 Y = data.iloc[:, -1:].values
 

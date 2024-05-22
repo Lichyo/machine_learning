@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 # import dataset
-dataset = pd.read_csv('datasets/Data.csv')
+dataset = pd.read_csv('../datasets/Data.csv')
 features = dataset.iloc[:, :-1].values  # index locating ( row & column )
 dependent_variable = dataset.iloc[:, -1].values
 
