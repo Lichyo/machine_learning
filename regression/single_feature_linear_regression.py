@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 
 # load data
-data = pd.read_csv('datasets/Salary_Data.csv')
+data = pd.read_csv('../datasets/Salary_Data.csv')
 X = data.iloc[:, :-1].values
 Y = data.iloc[:, -1].values
 
